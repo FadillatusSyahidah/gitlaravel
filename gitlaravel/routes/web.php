@@ -23,4 +23,6 @@ Route::get('blog', function (){
 Route::get('belajar', function (){
     return view('belajar');
 });
-Route::redirect('/dila', '/blog');
+Route::get('biodata', function (){
+    return view('biodata');
+});

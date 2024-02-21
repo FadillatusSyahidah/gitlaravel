@@ -7,6 +7,6 @@
 
     </head>
     <body >
-        <p>Test tas test</p>
+        <p>Testing saya sedang belajar controller di laravel ^^'</p>
     </body>
 </html>

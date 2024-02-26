@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BelajarController;
+use App\Http\Controllers\biodataController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +24,9 @@ Route::get('blog', function (){
 Route::get('belajar', function (){
     return view('belajar');
 });
-Route::get('biodata', function (){
-    return view('biodata');
-});
+Route::get('/biodata',[biodataController::class,'biodata']);
+
+Route::get('input', [App\Http\Controllers\InputController::class, 'viewPostData']);
+Route::post('input', [App\Http\Controllers\InputController::class, 'processPostData']);
+
+Route::get('getdata', [App\Http\Controllers\GetDataController::class, 'viewGetData']);

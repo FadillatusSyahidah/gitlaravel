@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
 Route::get('blog', function (){
     return view('blog');
@@ -30,3 +30,5 @@ Route::get('input', [App\Http\Controllers\InputController::class, 'viewPostData'
 Route::post('input', [App\Http\Controllers\InputController::class, 'processPostData']);
 
 Route::get('getdata', [App\Http\Controllers\GetDataController::class, 'viewGetData']);
+
+Route::view('main', 'Main');
